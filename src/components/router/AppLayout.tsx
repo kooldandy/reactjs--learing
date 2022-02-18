@@ -35,10 +35,10 @@ const AppLayout = () => {
           <div id='navbarid' className='collapse navbar-collapse flex-row-reverse'>
             <ul className='navbar-nav text-center'>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarHookMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Hooks
                 </a>
-                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarHookMenuLink">
                   <li>
                     <CustomLink className="dropdown-item" to="/usestate">Use state</CustomLink>
                   </li>
@@ -63,26 +63,22 @@ const AppLayout = () => {
                 </ul>
               </li>
 
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarMobXMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MobX
+                </a>
+                <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarMobXMenuLink">
+                  <li>
+                    <CustomLink className="dropdown-item" to="/mobx">State Management</CustomLink>
+                  </li>
+                </ul>
+              </li>
+
               <li className='nav-item'>
                 <CustomLink to="/usestate">Use state</CustomLink>
               </li>
               <li className='nav-item'>
                 <CustomLink to="/useeffets">Use effects</CustomLink>
-              </li>
-              <li className='nav-item'>
-                <CustomLink to="/usecontext">Use context</CustomLink>
-              </li>
-              <li className='nav-item'>
-                <CustomLink to="/useref">Use ref</CustomLink>
-              </li>
-              <li className='nav-item'>
-                <CustomLink to="/usereducer">Use reducer</CustomLink>
-              </li>
-              <li className='nav-item'>
-                <CustomLink to="/usememo">Use memo</CustomLink>
-              </li>
-              <li className='nav-item'>
-                <CustomLink to="/usecallback">Use callback</CustomLink>
               </li>
 
             </ul>

@@ -7,7 +7,8 @@ import ButtonClickerReducer from './../useReducer/buttonClickerReducer';
 import CompA from './../useContext/CompA';
 import MemoizeValue from './../useMemo/memoizeValue';
 import UseCallbackExample from './../useCallback/useCallbackExample';
-import AppLayout from './AppLayout';
+import MobxExample from '../stateManagement/MobxExample';
+import { TodoStore } from '../stateManagement/TodoStore';
 
 const AppRouter = () => {
   return <>
@@ -21,7 +22,8 @@ const AppRouter = () => {
       <Route path="/usereducer" element={<ButtonClickerReducer />}></Route>
       <Route path="/usememo" element={<MemoizeValue />}></Route>
       <Route path="/usecallback" element={<UseCallbackExample />}></Route>
-    </Routes>
+      <Route path="/mobx" element={<MobxExample todoStore={TodoStore}/>}></Route>
+    </Routes> 
   </>;
 };
 
