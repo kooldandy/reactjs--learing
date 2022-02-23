@@ -69,7 +69,7 @@ const AppLayout = () => {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarMobXMenuLink">
                   <li>
-                    <CustomLink className="dropdown-item" to="/mobx">State Management</CustomLink>
+                    <CustomLink className="dropdown-item" to="/mobx">Todo List</CustomLink>
                   </li>
                 </ul>
               </li>

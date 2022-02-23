@@ -37,16 +37,21 @@ const MobxExample: React.FC<ITodoListProps> = observer(({ todoStore }) => {
               className={`list-group-item d-flex justify-content-between align-items-center" ${!todo.completed ? 'list-group-item-primary': 'list-group-item-success'}`}
             >
               <>
-              {(todo.completed) ? <del>{todo.title}</del> : <span>{todo.title}</span>}
+              {(todo.completed) ? <del className="flex-sm-grow-1">{todo.title}</del> : <span className="flex-sm-fill">{todo.title}</span>}
               </>
               
               <input
-                className="form-check-input me-1"
+                className="form-check-input me-3"
                 type="checkbox"
                 checked={todo.completed}
                 onClick={() => todoStore.markCompleted(todo.id)}
               />
-              <span onClick={() => todoStore.deleteTodo(todo.id)}>
+              <button 
+                className="btn btn-danger" 
+                disabled={todo.completed}
+                onClick={() => todoStore.deleteTodo(todo.id)} 
+              >
+              <span >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -62,6 +67,8 @@ const MobxExample: React.FC<ITodoListProps> = observer(({ todoStore }) => {
                   />
                 </svg>
               </span>
+              </button>
+              
             </li>
           );
         })}
