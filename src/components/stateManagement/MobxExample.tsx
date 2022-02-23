@@ -36,7 +36,10 @@ const MobxExample: React.FC<ITodoListProps> = observer(({ todoStore }) => {
               key={todo.id}
               className={`list-group-item d-flex justify-content-between align-items-center" ${!todo.completed ? 'list-group-item-primary': 'list-group-item-success'}`}
             >
-              <span>{todo.title}</span>
+              <>
+              {(todo.completed) ? <del>{todo.title}</del> : <span>{todo.title}</span>}
+              </>
+              
               <input
                 className="form-check-input me-1"
                 type="checkbox"
