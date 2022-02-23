@@ -1,4 +1,4 @@
-import {action, autorun, makeObservable, observable} from 'mobx';
+import {action, makeObservable, observable} from 'mobx';
 
 export interface TodoItem {
     id: number;
@@ -12,7 +12,9 @@ export class TodoStoreImpl {
     constructor(){
         makeObservable(this, {
             todos: observable,
-            addTodo: action
+            addTodo: action,
+            markCompleted: action,
+            deleteTodo: action,
         })
 
         //autorun(() => console.log(this.todos));
@@ -26,6 +28,22 @@ export class TodoStoreImpl {
             completed: false,
         }
         this.todos.push(item);
+    }
+
+    //Action
+    markCompleted(id: number){
+        this.todos.map(todo =>{
+            if(todo.id === id){
+                const status = todo.completed;
+                todo.completed = !status;
+            }
+            return todo;
+        })
+    }
+
+    //Action
+    deleteTodo(id: number){
+       this.todos = this.todos.filter(todo => todo.id !== id);
     }
 }
 
