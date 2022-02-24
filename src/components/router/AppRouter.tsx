@@ -9,6 +9,8 @@ import MemoizeValue from './../useMemo/memoizeValue';
 import UseCallbackExample from './../useCallback/useCallbackExample';
 import MobxExample from '../stateManagement/MobxExample';
 import { TodoStore } from '../stateManagement/TodoStore';
+import ImagesGallery from '../pictureGallery/ImagesGallery';
+import { ImagesStore } from '../pictureGallery/ImagesStore';
 
 const AppRouter = () => {
   return <>
@@ -23,6 +25,7 @@ const AppRouter = () => {
       <Route path="/usememo" element={<MemoizeValue />}></Route>
       <Route path="/usecallback" element={<UseCallbackExample />}></Route>
       <Route path="/mobx" element={<MobxExample todoStore={TodoStore}/>}></Route>
+      <Route path="/mobxImages" element={<ImagesGallery imagesStore={ImagesStore}/>}></Route>
     </Routes> 
   </>;
 };

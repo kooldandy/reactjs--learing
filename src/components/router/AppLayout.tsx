@@ -71,6 +71,9 @@ const AppLayout = () => {
                   <li>
                     <CustomLink className="dropdown-item" to="/mobx">Todo List</CustomLink>
                   </li>
+                  <li>
+                    <CustomLink className="dropdown-item" to="/mobxImages">Images Gallery</CustomLink>
+                  </li>
                 </ul>
               </li>
 
