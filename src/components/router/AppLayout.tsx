@@ -78,7 +78,7 @@ const AppLayout = () => {
               </li>
 
               <li className='nav-item'>
-                <CustomLink to="/usestate">Use state</CustomLink>
+                <CustomLink to="/aggrid-example">Ag-Grid</CustomLink>
               </li>
               <li className='nav-item'>
                 <CustomLink to="/useeffets">Use effects</CustomLink>

@@ -11,6 +11,7 @@ import MobxExample from '../stateManagement/MobxExample';
 import { TodoStore } from '../stateManagement/TodoStore';
 import ImagesGallery from '../pictureGallery/ImagesGallery';
 import { ImagesStore } from '../pictureGallery/ImagesStore';
+import AgGridExample from '../ag-grid/AgGridExample';
 
 const AppRouter = () => {
   return <>
@@ -26,6 +27,7 @@ const AppRouter = () => {
       <Route path="/usecallback" element={<UseCallbackExample />}></Route>
       <Route path="/mobx" element={<MobxExample todoStore={TodoStore}/>}></Route>
       <Route path="/mobxImages" element={<ImagesGallery imagesStore={ImagesStore}/>}></Route>
+      <Route path="/aggrid-example" element={<AgGridExample />}></Route>
     </Routes> 
   </>;
 };
