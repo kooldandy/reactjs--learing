@@ -1,0 +1,58 @@
+/* Basic Style */
+
+.skeleton{
+    background-color: #ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.skeleton.card{
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+}
+
+.skeleton.text{
+    width: 100%;
+    min-width: 150px;
+    height: 12px;
+}
+
+.skeleton.title{
+    width: 50%;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.skeleton.avator{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.skeleton.thumbnail{
+    width: 100px;
+    height: 100px;
+}
+
+/* Shimmer */
+
+.shimmer {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer-animation;
+    animation-timing-function: linear;
+    background: #E5F0FB;
+    background: linear-gradient(to right, #c1dceb 4%, #a3cbe1 25%, #c1dceb 36%);
+    background-size: 1200px 100%;
+}
+
+@keyframes shimmer-animation {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
