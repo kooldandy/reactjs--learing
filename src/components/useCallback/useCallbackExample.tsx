@@ -11,6 +11,10 @@ const UseCallbackExample = () => {
         setName('Home Page Updated')
     }, [name]);
 
+    // const updateNameHandler = () => {
+    //     setName('Home Page Updated')
+    // };
+
     const updateAboutHandler = useCallback(() => {
         setAbout('About Page Updated')
     }, [about]);
