@@ -154,11 +154,28 @@ const AppLayout = () => {
                       Controlled
                     </CustomLink>
                   </li>
-                  {/* <li>
-                    <CustomLink className="dropdown-item" to="/mobxImages">
-                      Images Gallery
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarForms"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Single Page Apps
+                </a>
+                <ul
+                  className="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="navbarForms"
+                >
+                  <li>
+                    <CustomLink className="dropdown-item" to="/kanbanboard">
+                      Kanban Board
                     </CustomLink>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
             </ul>

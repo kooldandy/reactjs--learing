@@ -13,6 +13,7 @@ import ImagesGallery from '../pictureGallery/ImagesGallery';
 import { ImagesStore } from '../pictureGallery/ImagesStore';
 import AgGridExample from '../ag-grid/AgGridExample';
 import ControlledForms from '../forms/controlledforms/ControlledForms';
+import Board from '../kanban/Board';
 
 const AppRouter = () => {
   return <>
@@ -29,7 +30,8 @@ const AppRouter = () => {
       <Route path="/mobx" element={<MobxExample todoStore={TodoStore}/>}></Route>
       <Route path="/mobxImages" element={<ImagesGallery imagesStore={ImagesStore}/>}></Route>
       <Route path="/aggrid-example" element={<AgGridExample />}></Route>
-      <Route path="controlledforms" element={<ControlledForms />}> </Route>
+      <Route path="/controlledforms" element={<ControlledForms />}> </Route>
+      <Route path="/kanbanboard" element={<Board />}> </Route>
     </Routes> 
   </>;
 };
