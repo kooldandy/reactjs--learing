@@ -1,0 +1,57 @@
+.edit-pencil {
+ position: relative;
+ display: inline-block;
+ width: 25px;
+ height: 36px;
+ vertical-align: middle;
+ cursor: pointer;
+ left: 25%;
+ margin-top: -1%;
+}
+.edit-pencil:before {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-2px, -3px) rotate(-45deg);
+ width: 3px;
+ height: 5px;
+ background-color: #7081a3;
+ box-shadow: 1px 0px 0px #7081a3, 2px 0px 0px #7081a3, 3px 0px 0px #7081a3, -1px 0px 0px #7081a3, -2px 0px 0px #7081a3, -3px 0px 0px #7081a3, -3.3px 0px 0px #7081a3, 7px 0px 0px #7081a3;
+ transition: all 300ms;
+ content: '';
+}
+.edit-pencil:after {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-9px, 3px) rotate(-45deg);
+ font-size: 1px;
+ border: solid 3em transparent;
+ border-left-width: 0;
+ border-right-width: 5em;
+ border-right-color: #7081a3;
+ transition: all 300ms;
+ content: '';
+}
+.edit-pencil:hover:before {
+ background-color: #333333;
+ box-shadow: 1px 0px 0px #333333, 2px 0px 0px #333333, 3px 0px 0px #333333, -1px 0px 0px #333333, -2px 0px 0px #333333, -3px 0px 0px #333333, -3.3px 0px 0px #333333, 7px 0px 0px #333333;
+}
+.edit-pencil:hover:after {
+ border-right-color: #333333;
+}
+
+.delete-icon{
+ position: relative;
+ left: 28%;
+ cursor: pointer;
+ 
+}
+.bi-trash {
+ fill: #333333;
+ opacity: 0.7;
+}
+.bi-trash:hover {
+ fill: #000;
+ opacity: 1;
+}
