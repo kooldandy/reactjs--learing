@@ -14,6 +14,7 @@ import { ImagesStore } from '../pictureGallery/ImagesStore';
 import AgGridExample from '../ag-grid/AgGridExample';
 import ControlledForms from '../forms/controlledforms/ControlledForms';
 import Board from '../kanban/Board';
+import CrudApp from '../redux/crud/CrudApp';
 
 const AppRouter = () => {
   return <>
@@ -32,6 +33,7 @@ const AppRouter = () => {
       <Route path="/aggrid-example" element={<AgGridExample />}></Route>
       <Route path="/controlledforms" element={<ControlledForms />}> </Route>
       <Route path="/kanbanboard" element={<Board />}> </Route>
+      <Route path="/reduxcrud" element={<CrudApp />}> </Route>
     </Routes> 
   </>;
 };

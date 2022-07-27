@@ -178,6 +178,28 @@ const AppLayout = () => {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarForms"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Redux
+                </a>
+                <ul
+                  className="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="navbarForms"
+                >
+                  <li>
+                    <CustomLink className="dropdown-item" to="/reduxcrud">
+                      CRUD
+                    </CustomLink>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
